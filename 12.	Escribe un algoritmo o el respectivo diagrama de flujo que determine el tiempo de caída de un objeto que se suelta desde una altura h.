@@ -1,0 +1,9 @@
+import math
+while True:
+    try:
+        h = int(input("Ingrese la altura a la que se suelte el objeto (en metros)= "))
+        t = math.sqrt((2 * h) / 9.8)
+        print("El tiempo de caida es de", round(t), "segundos aproximadamente")
+        break
+    except:
+        print("Asegurese de poner bien los numeros")
