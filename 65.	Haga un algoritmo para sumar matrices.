@@ -1,0 +1,34 @@
+filas = int(input("Introduce el numero de filas: "))
+colum = int(input("Introduce el nuemero de columnas: "))
+A, B  = [], []
+for i in range(filas):
+    A.append([0]*colum)
+    print(A[i])
+print("{}".format("-"*colum*3))
+for i in range(filas):
+    B.append([0]*colum)
+    print(B[i])
+for i in range(filas):
+    for j in range(colum):
+        A[i][j] = int(input("Dame el componente ({},{}) de la 1° Matriz: ".format(i,j)))
+print("Asi quedara la primera matriz")
+for i in range(filas):
+    print(A[i])
+for i in range(filas):
+    for j in range(colum):
+        B[i][j] = int(input("Dame el componente ({},{}) de la 2° Matriz: ".format(i,j)))
+print("Asi quedara la segunda matriz")
+for i in range(filas):
+    print(B[i])
+C = []
+for i in range(filas):
+    C.append([0]*colum)
+for i in range(filas):
+    for j in range(colum):
+        C[i][j]=A[i][j]+B[i][j]
+print("Asi quedara el resultado de la suma de las dos matrices")
+for i in range(filas):
+    R = []
+    for j in range(colum):
+        R.append(C[i][j])
+    print(R)
