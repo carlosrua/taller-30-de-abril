@@ -13,3 +13,5 @@ while True:
       break
     else:
       print("El numero no es decimal")
+  except:
+    print("Expresion numerica no valida")
