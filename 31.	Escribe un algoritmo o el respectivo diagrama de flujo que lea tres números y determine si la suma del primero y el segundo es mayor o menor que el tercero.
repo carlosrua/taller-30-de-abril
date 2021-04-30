@@ -1,0 +1,9 @@
+from pip._vendor.distlib.compat import raw_input
+nu1, nu2, nu3 = map(int, raw_input("Ingrese los tres numeros separados y en orden por un espacio= ").split())
+suma = nu1 + nu2
+if suma > nu3:
+    print("La suma del primero y el segundo es mayor que el tercer numero")
+elif suma == nu3:
+    print("La suma del primero y el segundo numero es igual al tercer numero")
+else:
+    print("La suma del primero y el segundo es menor que el tercer 
