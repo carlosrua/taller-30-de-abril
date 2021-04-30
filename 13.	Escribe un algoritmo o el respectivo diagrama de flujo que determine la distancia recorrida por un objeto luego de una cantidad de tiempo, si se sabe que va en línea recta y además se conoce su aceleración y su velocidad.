@@ -1,0 +1,11 @@
+while True:
+    try:
+        t = int(input("Ingrese el tiempo del recorrido en segundos = "))
+        print("se cojera una velocidad de 60 metros por segundo")
+        v = 60
+        distancia = v * t
+
+        print("La distancia recorrida fue de", distancia,"metros")
+        break
+    except:
+        print("Asegurese de poner bien los numeros")
