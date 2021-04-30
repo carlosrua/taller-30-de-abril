@@ -1,0 +1,7 @@
+import math
+from pip._vendor.distlib.compat import raw_input
+
+x1, y1 = map(int, raw_input("Ingrese los valores de x1 y y1 con espacios= ").split())
+x2, y2 = map(int, raw_input("Ingrese los valores de x2 y y2 con espacios= ").split())
+d = math.sqrt(((x2-x1)**2)+((y2-y1)**2))
+print("La distancia entre los numeros dentro del plano cartesiano es", d, "")
