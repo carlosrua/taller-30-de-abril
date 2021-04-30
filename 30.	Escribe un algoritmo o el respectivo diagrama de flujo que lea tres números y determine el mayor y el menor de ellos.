@@ -1,0 +1,8 @@
+List = []
+print("Ingrese tres numeros")
+i = 0
+while i<3:
+    i += 1
+    x = int(input("#= "))
+    List.append(x)
+print("El mayor numero de entre esos tres fue", int(max(List)), "y el menor es", int(min(List)))
