@@ -1,0 +1,12 @@
+while True:
+    try:
+         s = int(input("Ingrese los segundos que desee= "))
+         if s < 0:
+             print("Ingreso segundos negativos")
+             continue
+         else:
+            convr = s/3600
+            print(s, "segundos convertidos en horas representan", convr)
+            break
+    except:
+        print("Ingrese bien los valores")
