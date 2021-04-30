@@ -1,0 +1,24 @@
+p1 = 0.15
+p2 = 0.20
+p3 = 0.15
+p4 = 0.30
+p5 = 0.20
+while True:
+    try:
+        print("Porfavor ingrese el valor de las notas entre 0 y 5")
+        nota1 = float(input("Valor de la nota 1 = "))
+        nota2 = float(input("Valor de la nota 2 = "))
+        nota3 = float(input("Valor de la nota 3 = "))
+        nota4 = float(input("Valor de la nota 4 = "))
+        nota5 = float(input("Valor de la nota 5 = "))
+        if nota1 > 5.00 or nota2 > 5.00 or nota3 > 5.00 or nota4 > 5.00 or nota5 > 5.00:
+            print("Ingreso un valor mayor o menor al rango entre 0.00 y 5.00")
+        elif nota1 < 0.00 or nota2 < 0.00 or nota3 < 0.00 or nota4 < 0.00 or nota5 < 0.00:
+            print("Ingreso un valor mayor o menor al rango entre 0.00 y 5.00")
+
+        else:
+            Total = nota1 * p1 + nota2 * p2 + nota3 * p3 + nota4 * p4 + nota5 * p5
+            print("Su nota definitiva es", round(Total))
+            break
+    except:
+        print("Esa no es una expresion numerica valida")
