@@ -1,0 +1,10 @@
+while True:
+    try:
+        x = int(input("Porfavor ingresa un numero natural: \n"))
+        if x < 0:
+            print("No se validan numeros negativos")
+        else:
+            print("El nuemro que ingreso fue", x)
+            break
+    except:
+        print("Esa no es una exprecion numerica valida")
