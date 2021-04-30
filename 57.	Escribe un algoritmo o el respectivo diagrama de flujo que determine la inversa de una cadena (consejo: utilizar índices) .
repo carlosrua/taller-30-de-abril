@@ -1,0 +1,4 @@
+def str(n):
+    return n[::-1]
+cadena = input("Ingrese una palabra para invertirla= ")
+print(str(cadena))
