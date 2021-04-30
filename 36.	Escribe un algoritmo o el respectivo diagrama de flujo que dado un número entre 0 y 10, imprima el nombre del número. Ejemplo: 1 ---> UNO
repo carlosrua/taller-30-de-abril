@@ -1,0 +1,23 @@
+num = {
+  1: "UNO",
+  2: "DOS",
+  3: "TRES",
+  4: "CUATRO",
+  5: "CINCO",
+  6: "SEIS",
+  7: "SIETE",
+  8: "OCHO",
+  9: "NUEVE",
+  10: "DIEZ"
+}
+while True:
+    try:
+        er = int(input("Elija un numero entre el 1 y el 10: \n"))
+        if er < 1 or er > 10:
+            print("Numeros fuera del rango intente de nuevo")
+            continue
+        else:
+            print("{} --> {}".format(er,num[er]))
+            break
+    except:
+        print("Ingresa bien los numeros")
