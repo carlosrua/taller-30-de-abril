@@ -1,0 +1,12 @@
+from pip._vendor.distlib.compat import raw_input
+while True:
+    try:
+        n1, n2= map(int, raw_input("Ingresa dos numeros con espacios: ").split())
+        if n1 and n2 >=0 and n1 and n2 <= 5:
+            print(n1,"y",n2,"--->",True)
+            break
+        else:
+            print(n1, "y", n2, "--->", False)
+            break
+    except:
+        print("Ingresa bien los numeros")
