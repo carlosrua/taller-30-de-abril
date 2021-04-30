@@ -1,0 +1,10 @@
+from pip._vendor.distlib.compat import raw_input
+while True:
+    try:
+        a, b = map(int, raw_input("Ingrese el valor de los dos variables (separados por espacio)= ").split())
+        a1 = b
+        b1 = a
+        print("Las variables originales fueron a =", a, "y b =", b, "y su intercambio fue a =", a1, "y b =", b1)
+        break
+    except:
+        print("Asegurese de poner bien los numeros")
