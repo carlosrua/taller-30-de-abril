@@ -1,0 +1,5 @@
+n = int(input("Cuantos quiere imprimir= "))
+for x in range(0, n):
+    if x%2==0:
+        x = x-(x*2)
+    print(x)
