@@ -1,0 +1,10 @@
+from pip._vendor.distlib.compat import raw_input
+List = []
+sumatoria = 0
+n1, n2 = map(int, raw_input("Ingrese dos numeros naturales separados por un espacio: \n").split())
+List.append(n1), List.append(n2)
+print("Esta es la lista en orden de sus numeros naturales en un rango:")
+for x in range(int(min(List)), int(max(List))+1):
+    sumatoria += x
+    print(x)
+print("Entre los todos numeros naturales su suma fue",sumatoria)
