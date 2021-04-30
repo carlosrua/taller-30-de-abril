@@ -1,0 +1,11 @@
+while True:
+    try:
+        año = int(input("Ingrese un año para saber si es bisiesto: \n"))
+        if año % 4 == 0 and año % 100 == 0 and año % 400 == 0:
+            print("El año es bisiesto")
+            break
+        else:
+            print("El año dado no es bisiesto")
+            break
+    except:
+        print("Ingresa bien el año")
