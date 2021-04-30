@@ -1,0 +1,24 @@
+conteo, cincos, pares, impares = 0, 0, 0, 0
+print("Ingrese los valores que desee")
+while True:
+    try:
+        x = int(input("#= "))
+        if x < 0:
+            print("No se puede poner numeros negativos")
+            continue
+        conteo +=1
+        if x%2 ==0:
+            pares +=1
+            if pares == 10:
+                break
+        if x%2 != 0:
+            impares +=1
+        if x == 5:
+            cincos += 1
+            if cincos == 20:
+                break
+    except:
+        print("Esa no es una exprecion numerica valida")
+        continue
+print("La cantidad de total de numeros fue",conteo,"y el total de pares fueron",pares,
+      "mientras que los impares fueron", impares,"y el total de numeros 5 fue", cincos)
