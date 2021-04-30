@@ -1,0 +1,9 @@
+import math
+while True:
+    try:
+        p = float(input("Ingrese el lado del hexagono en metros = "))
+        area = 6*((p ** 2 * math.sqrt(3)) / 4)
+        print("El area del hexagono es", round(area), "m")
+        break
+    except:
+        print("Asegurese de poner bien el numero")
