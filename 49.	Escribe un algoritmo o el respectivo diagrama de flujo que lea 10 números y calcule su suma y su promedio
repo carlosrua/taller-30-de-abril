@@ -1,0 +1,17 @@
+cantidad, sumatoria, conteo = 0, 0, 0
+print("Ingrese los valores numericos que desee:")
+while True:
+    try:
+        conteo += 1
+        x = int(input("{}#= ".format(conteo)))
+        sumatoria += x
+        cantidad += 1
+        if conteo == 10 :
+            promedio = sumatoria / cantidad
+            print("la cantidad de valores que digito fue", cantidad)
+            print("la sumatoria entre estos valores fue de", sumatoria, "y su promedio fue de", round(promedio))
+            break
+    except:
+        print("Esa no es una exprecion numerica valida")
+        cantidad, sumatoria, conteo = 0, 0, 0
+        continue
