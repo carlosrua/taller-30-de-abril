@@ -1,0 +1,9 @@
+from pip._vendor.distlib.compat import raw_input
+while True:
+    try:
+        p, p2, p3 = map(int, raw_input("Ingrese los tres numeros separados por un espacio = ").split())
+        pro = (p + p2 + p3)/3
+        print("El promedio es", pro)
+        break
+    except:
+        print("Asegurese de poner bien los numeros")
